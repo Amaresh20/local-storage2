@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Item</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    localStorage.setItem("studentName1",'Cherry')
+    localStorage.setItem('studentName2','Gaurav')
+    localStorage.setItem('studentId',1)
+    localStorage.setItem('studentPresent',true)
+    var arr=[1,2,3,4]
+    localStorage.setItem('arrOfNumber',arr)
+    var stringfyArr=JSON.stringify(arr)
+    console.log(stringfyArr,typeof stringfyArr)
+    localStorage.setItem('arrOfNumber',stringfyArr);
+    var studentObj={
+        name:'Cheery',
+        gender:'Male'
+      }
+    localStorage.setItem('stuObj',JSON.stringify(studentObj))
+
+
+</script>
